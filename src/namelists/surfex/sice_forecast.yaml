@@ -1,0 +1,18 @@
+ NAM_SEAICE_SICE=>{
+    LICE_MASS_BALANCE   => '.TRUE.,',
+    LICE_HAS_SNOW       => '.FALSE.,',
+    XOCEAN_HEAT_FLUX    => '2.,',
+ },
+ NAM_PREP_SEAICE_SICE=>{
+    XICE_THICKNESS      => '.75,',
+    NUM_LAYERS          => '4,'
+ },
+ NAM_SEAICEn=>{
+    LVOLATILE_SIC       => 'LVOLATILE_SIC,',
+    XSIC_EFOLDING_TIME  => '1.0,',
+ },
+ NAM_DIAG_SURFn=>{
+   LCOEF             => '.TRUE.,',
+   LSURF_VARS        => '.TRUE.,',
+ },
+);

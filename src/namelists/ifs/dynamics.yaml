@@ -1,0 +1,74 @@
+ NAMCT0:
+  NFPOS : "NFPOS"
+  LTWOTL : true
+  NFRDHFD : 1
+  NFRGDI : 15
+  NFRHIS : 1
+  NFRSDI : 15
+  NHISTS : "WRITELIST"
+  NPOSTS : "NPOSTS"
+  CNPPATH : "."
+ 
+ NAMCT1:
+  LRFILAF : false
+  N1POS : 1
+  N1RES : 0
+  
+ NAMDYNA:
+  NDLNPR : 0
+  LSETTLS : true
+ 
+ NAMDYN:
+  LADVF : true
+  NTLAG : 3
+  NVLAG : 3
+  NWLAG : 3
+  REPS1 : 0.
+  REPS2 : 0.
+  REPSM1 : 0.
+  REPSM2 : 0.
+  REPSP1 : 0.
+  SITR : 350.
+  VESL : 0.
+  XIDT : 0.05
+ 
+ NAMINI:
+  LDFI : false
+ 
+ NAMOPH:
+  LINC : "LLINC"
+ 
+ NAMPHY0:
+   REFLKUO : 5000.
+ 
+ NAMTOPH:
+  ETCVIM : 5000.
+  ETNEBU : 5000.
+  ETPLUI : 5000.
+  XDRMTK : 2.E-08
+  XDRMTP : 800.
+  XDRMTX : 4.E-07
+  XDRMUK : 1.E-07
+  XDRMUP : 800.
+  XDRMUX : 2.E-06
+ 
+ NEMELBC0A:
+  NBICOP : 2
+  NBICOT : 2
+  NBICOU : 2
+  NECRIPL : 1
+ 
+ NEMELBC0A:
+  LUNBC : "LUNBC"
+ 
+ NEMELBC0B:
+  TEFRCL : $TEFRCL
+ 
+ #NEMDIM:
+  #NNOEXTZX : 0
+  #NNOEXTZY : 0
+ #
+ NAMSPBD:
+  LSPBDC : false
+ 
+

@@ -1,0 +1,19 @@
+ NAM_IO_OFFLINE=>{
+   CPREPFILE            => '"SURFXINI",',
+   CPGDFILE             => '"PGD",',
+   LFAGMAP              => '.TRUE.',
+ },
+ NAM_PREP_SURF_ATM=>{
+   CFILEPGD      =>'"PGD_host",',
+   CFILEPGDTYPE  =>'"FA",',
+   CFILE      =>'"INFILE",',
+   CFILETYPE  =>'CFILETYPE,',
+   NYEAR      =>'NYEAR,',
+   NMONTH     =>'NMONTH,',
+   NDAY       =>'NDAY,',
+   XTIME      =>'XTIME,',
+ },
+ NAM_PREP_FLAKE=>{
+   LCLIM_LAKE   => '.TRUE.,',
+ },
+);

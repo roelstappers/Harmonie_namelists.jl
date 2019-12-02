@@ -1,0 +1,13 @@
+  NAM_ASSIM=>{
+    CASSIM_ISBA         => '"OI",',
+  },
+  # Needed here also for SODA + OI
+  NAM_OBS=>{
+    'LSWE'=>'.TRUE.,',
+    'NOBSTYPE'=>'3',
+    'COBS_M(1)'=>'"T2M",',
+    'COBS_M(2)'=>'"HU2M",',
+    'COBS_M(3)'=>'"SWE",',
+    NNCO => $ENV{NNCO},
+  },
+);

@@ -1,0 +1,189 @@
+ NAMCOSJO:
+  "NOTVAR1:255" : " 0 0-1-1-1-1 0-1-1-1-1-1-1-1-1-1-1-1 0-1-1-1-1-1-1"
+ 
+ NAMSATS:
+  "LRTCALC_HRETR0" : true
+  "LRTCALC_HRETR3" : true
+  "LRTCALC_HRETR4" : true
+  "LRTCALC_HRETR11" : true
+  "LRTCALC_HRETR15" : true
+  "LRTCALC_HRETR16" : true
+ 
+
+
+# Minimization
+minimization:
+ NAMCT0:
+  "LFDBOP" : false
+  "NFPOS" : "0"
+  "LOBS" : "LBOBS"
+  "LNHDYN"   : "LBNHDYN"
+  "LSIMOB" : false
+  "NCNTVAR" : "2"
+  "NFRGDI" : "10000"
+  "NFRHIS" : "10000"
+  "NFRPOS" : "10000"
+  "NFRSDI" : "10000"
+  "NGDITS0" : "1"
+  "NGDITS1" : "1"
+  "NHISTS0" : "1"
+  "NHISTS1" : "1"
+  "NPOSTS0" : "1"
+  "NPOSTS1" : "0"
+  "NSDITS0" : "0"
+  "NSDITS1" : "0"
+  
+ NAMDYN:
+  "SIPR" : "100000."
+  "SITR" : "350."
+
+ NAMEMIS_CONF:
+  "LDYN_AMSU" : false
+  "LUSE_TELSEM" : false
+
+ NAMIOMI:
+  "CFVATRA" : "\"VATRH\""
+  "NMUPD" : "5"
+
+ NAMJG:
+   "CONFIGL3DBGERR" : true
+   "CONFIGLCLMSFCE" : true
+   "CONFIGLCORCOSU" : false
+   "CONFIGLJB_NONLINEAR_BALANCE" : false
+   "CONFIGLJB_NONLINEAR_CVHUM" : false
+   "CONFIGLJB_NONLINEAR_CVO3" : false
+   "CONFIGLJB_NONLINEAR_BALANCE_RELAX" : false
+   "CONFIGLJB_OMEGA_BALANCE_RELAX" : false
+   "CONFIGLJB_OMEGA_BALANCE" : false
+   "CONFIGELC" : "300000."
+   "CONFIGLJBBALBETA" : false
+   "CONFIGLSPFCE" : true
+   "CONFIGLSBQ_STRATOLOW" : false
+   "CONFIGLRDQERR" : false
+   "CONFIGLREDNMCQ" : false
+   "CONFIGLSBLATLONG" : false
+   "CONFIGREDNMC" : "NREDNMC"
+ 
+ NAMCOSJO:
+  "LQSCATT" : true
+  "LVARQC" : false
+  "LTC" : false
+  "NOTVAR1:271" : " 0 0-1-1-1-1-1 0-1-1-1-1-1-1-1 0-1-1-1-1-1-1-1-1-1-1 0"
+  "NOTVAR1:2510": "-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1"
+  "NOTVAR1:252" : " 0 0-1-1-1-1 0-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1"
+  "NOTVAR1:253" : " 0 0-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1"
+  "NOTVAR1:254" : " 0 0-1-1-1-1-1 0-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1"
+  "NOTVAR1:255" : " 0-1-1-1-1-1 0-1-1-1-1-1-1-1-1-1-1-1 0-1-1-1-1-1-1"
+  "NOTVAR1:256" : " 0 0-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1"
+  "NOTVAR1:257" : "-1-1-1-1-1-1-1-1-1-1-1-1 0-1-1-1-1-1-1-1-1-1-1-1-1"
+  "NOTVAR1:258" : "-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1"
+  "NOTVAR1:259" : " 0 0-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1"
+  
+ NAMNMI:
+  "FILTR1" : ".5"
+  "FILTR2" : ".5"
+  "FILTR3" : ".5"
+  "FILTR4" : ".5"
+  "LCOIMP" : true
+  "LCONMO" : true
+  "LGPROJ" : false
+  "LICONV" : false
+  "LNLNMI" : true
+  "LNMIFF" : false
+  "LRGENE" : true
+  "LRPIMP" : true
+  "LRSPSL" : false
+  "LSTDNMI" : false
+  "NVMODF" : "4"
+  "NVMODF1" : "27"
+  "NVMODF2" : "28"
+  
+ NAMOBS:
+  "LCACHMT" : true
+  "LCAPACH" : false
+  "LMKCMARPL" : false
+  "L_F_SCR_WORK_TS" : false
+  "NOBSHOR" : "201"
+  "LAMSUB_FULL" : true
+
+ NAMPAR1:
+  "LSPLIT"    : false
+
+ NAMSATS:
+  "LCO2_DIAG_AIRS" : true
+  "MEMIS_SW" : "1"
+
+ NAMLCZ:
+  "LFORCE" : "LFORCE"
+
+ NAMVAR:
+  "LANOBS" : false
+  "LBGOBS" : false
+  "LCLDSINK" : false
+  "LCONGRAD" : false
+  "LINITCV" : true
+  "LJC" : false
+  "LREADGPTRAJ" : false
+  "LSTATMERR" : false
+  "LTEST" : false
+  "LTOVSCV" : "LTOVSCV"
+  "LBGPERT" : "LBGPERT"
+  "DELTA" : "DELTA"
+  "NBGVECS" : "NBGVECS"
+  "LQBAR" : "LQBAR"
+  "LCNTBAL" : "LCNTBAL"
+  "NWQBAR" : "NWQBAR"
+  "LCVALPHA" : "LCVALPHA"
+  "LJAZERO" : false
+  "LUNIHOM" : true
+  "NSPD_INDEX" : "1"
+  "N_SCALES" : "1"
+  "LVARBC" : "LBVARBC"
+  "L_CHECK_CONVERGENCE" : false
+  "NFRANA" : "10000"
+  "NGRATS0" : "1"
+  "NGRATS1" : "1"
+  "NITER" : "50"
+  "NSIMU" : "60"
+  "NUPTRA" : "NBUPTRA"
+  "MUPTRA" : "3"
+  "MUPTRA" : "0"
+  "RCVGE" : "1.E-3"
+  "LSKIPMIN" : "LBSKIPMIN"
+  "LCHRESINCR" : "LBCHRESINCR"
+  
+ NAMVARBC:
+ 
+ NAMVARBC_RAD:
+  "LBC_RAD" : true
+ 
+ NAMVRTL:
+  "L131TL" : true
+  "LOBSTL" : true
+
+ NEMELBC0A:
+  "NBICOP" : "2"
+  "NBICOT" : "2"
+  "NBICOU" : "2"
+ 
+ NEMVAR:
+  "ENIL1" : "300000."
+  "ENIL2" : "500000."
+  "ENILHBAL1" : "600000."
+  "ENILHBAL2" : "1000000."
+  "EVAREPSILON" : "1.E-2"
+  "EXPVAR" : "1.0"
+  "LCORCOSU_AUTO" : false
+  "LCORCOSU_HBAL" : false
+  "LCORCOSU_STAT" : false
+  "LEVARGP" : false
+  "LPERTRELAX" : "LPERTRELAX"
+  "NBZONVAR_EW" : "NBZONVAR_EW"
+  "LMODEPS" : "LMODEPS"
+  "LSTBALB" : true
+  "LSTBALC" : true
+  "LSTBALD" : true
+  "LSTBALE" : true
+  "LSTBALF" : true
+  "LSTBALG" : true
+  

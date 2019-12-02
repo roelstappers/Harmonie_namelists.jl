@@ -1,0 +1,38 @@
+NAMGFL:
+  YA_NLNREQIN: "ICLOUDFRACTI"
+  YA_NLLREQOUT: "LCLOUDFRACTI"
+  YQ_NLLGPINGP: true
+  YQ_NLLGP: true
+  YQ_NLLSP: false
+  YQ_NLNREQIN: 1
+  YQ_NLLREQOUT: true
+  YL_NLLGP: true
+  YL_NLLSP: false
+  YL_NLNREQIN: 1
+  YL_NLLREQOUT: true
+  YI_NLLGP: true
+  YI_NLLSP: false
+  YI_NLNREQIN: 1
+  YI_NLLREQOUT: true
+  YR_NLLGP: true
+  YR_NLLSP: false
+  YR_NLNREQIN: 1
+  YR_NLLREQOUT: true
+  YS_NLLGP: true
+  YS_NLLSP: false
+  YS_NLNREQIN: 1
+  YS_NLLREQOUT: true
+  YG_NLLGP: true
+  YG_NLLSP: false
+  YG_NLNREQIN: 1
+  YG_NLLREQOUT: true
+  YTKE_NLLGP: true
+  YTKE_NLLSP: false
+  YTKE_NLNREQIN: 1
+  YTKE_NLLREQOUT: true
+
+NAMPHY:
+  LAERODES: true
+  LAEROLAN: true
+  LAEROSEA: true
+  LAEROSOO: true

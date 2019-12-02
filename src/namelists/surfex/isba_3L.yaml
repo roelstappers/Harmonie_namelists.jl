@@ -1,0 +1,6 @@
+ NAM_ISBA=>{
+  CISBA          => '"3-L",',
+  NGROUND_LAYER  => '3,',
+  NPATCH         => $ENV{NPATCH},
+ },
+);

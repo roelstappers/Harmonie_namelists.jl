@@ -1,0 +1,5 @@
+{
+  "$id": "./harmonie.schema.json",
+  "$schema" : "http://json-schema.org/schema#",
+  "title": "Harmonie experiment configuration"
+}

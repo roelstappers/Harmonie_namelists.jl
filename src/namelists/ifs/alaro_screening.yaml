@@ -1,0 +1,19 @@
+NAMCOSJO:
+  SIGMAO_COEF: 0.9
+
+NAMOBS:
+  LSCATT_NEUTRAL: true
+  LSOE: true
+
+NAMPHY:
+  LAERODES: true
+  LAEROLAN: true
+  LAEROSEA: true
+  LAEROSOO: true
+  LECT: false
+  LO3ABC: true
+  LO3FL: true
+  LVGSN: true
+
+NAMVAR:
+  LREADGPTRAJ: false

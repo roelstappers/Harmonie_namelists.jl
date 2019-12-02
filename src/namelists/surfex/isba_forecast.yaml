@@ -1,0 +1,5 @@
+ NAM_DIAG_ISBAn=>{
+   LPGD     => '.TRUE.,',
+   LSURF_MISC_BUDGET=> '.TRUE.,',
+ },
+);

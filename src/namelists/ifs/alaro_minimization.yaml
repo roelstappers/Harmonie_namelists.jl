@@ -1,0 +1,30 @@
+NAMSATS:
+  LCLD_RTCALC_ASSIM0: false
+  LCLD_RTCALC_ASSIM11: false
+  LCLD_RTCALC_ASSIM3: false
+  LCLD_RTCALC_ASSIM4: false
+  LCLD_RTCALC_ASSIM6: false
+
+NAMPHY:
+  LAERODES: true
+  LAEROLAN: true
+  LAEROSEA: true
+  LAEROSOO: true
+  LECT: false
+  LO3ABC: true
+  LO3FL: true
+  LRAY: false
+  LVGSN: true
+
+NAMPHY0:
+  EDD: 1.
+  USURIC: 1.
+  USURICE: 0.5
+  USURICL: 4.
+  USURID: 0.048
+  USURIDE: 0.25
+  VZIUSTAR0: 12.
+
+NAMVAR:
+  LREADGPTRAJ: true
+  LTRAJGP: true

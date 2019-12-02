@@ -1,0 +1,5 @@
+NAM_IO_OFFLINE=>{
+      CSURF_FILETYPE       => "'".$ENV{CSURF_FILETYPE}."'",
+      CTIMESERIES_FILETYPE => "'".$ENV{CTIMESERIES_FILETYPE}."'",
+   },
+);

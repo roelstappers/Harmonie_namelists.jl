@@ -1,0 +1,28 @@
+NEMELBC0A:
+  NBICPD: 2
+  NBICVD: 2
+
+NAMDYNA:
+  LGWADV: false
+  LRDBBC: true
+  NPDVAR: 2
+  NVDVAR: 4
+  NDLNPR: 1
+  LGRADSP: "LGRADSP"
+  LNESC: false
+  LPC_FULL: false
+
+NAMDYN:
+  XIDT: 0.0
+  SITR: 350.
+  SITRA: 70.
+  NSITER: 0
+  NSPDLAG: 3
+  NSVDLAG: 3
+  LBOUND_D3: false
+
+NAMCT0:
+  LNHDYN: true
+
+NAMRIP:
+  NFOST: 0

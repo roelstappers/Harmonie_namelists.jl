@@ -1,0 +1,38 @@
+ NAMARG:
+  CNMEXP    : "CLIM"
+  NCONF     : 923
+  LELAM     : true
+  LECMWF    : false
+  CUSTOP    : t0
+  TSTEP     : 600.
+  LSLAG     : true
+  NSUPERSEDE: 0
+ 
+ NAMCT0:
+  LRPLANE : true
+  LALLOPR : false
+ 
+ NAMARG:
+  NCONF : 923
+  CNMEXP: "CLIM"
+  CUSTOP: "t0"
+  TSTEP : 600.
+  LSLAG : true
+  NSUPERSEDE : 0
+ 
+ NAMMCC:
+  N923 : 0
+ 
+ NAMPHY:
+  LMPHYS : true
+  LSOLV : true
+  LVGSN : true
+ 
+ NAMPHY0:
+  GCVPSI : 0.
+ 
+ NEMDIM:
+  NBZONG : 8
+  NBZONL : 8
+ 
+

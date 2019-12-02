@@ -1,0 +1,181 @@
+NAMTESTVAR:
+  NTESTVAR: 2
+  LADTEST: true
+  LTLTEST: false
+  LINTEST: false
+  LGRTEST: false
+  LCVTEST: true
+
+NAMARPHY:
+  LKFBCONV: false
+  LKFBD: false
+  LKFBS: false
+  LMFSHAL: true
+  LMICRO: true
+  LMPA: false
+  LMSE: false
+  LTURB: true
+
+NAMCFU:
+  LCUMFU: false
+  LRAYS: false
+
+NAMCT0:
+  LAROME: false
+  LOBS: true
+  NFRHIS: 1000
+  NHISTS: 0
+  LNHDYN: "LBNHDYN"
+  NFRSDI: 1
+  NFRGDI: 1
+  LFBDAP: false
+  NSPPR: 0
+
+NAMCT1:
+  N1POS: 0
+
+NAMDYN:
+  TSTEP_TRAJ: TSTEPTRAJ
+
+NAMDYNA:
+  LGRADSP: false
+  NDLNPR: 0
+
+NAMGFL:
+  NGFL_EZDIAG: 0
+  YCPF_NLLGP: false
+  YG_NLLGP: true
+  YG_NLLSP: false
+  YG_NLNREQIN: 0
+  YI_NLLGP: true
+  YI_NLLSP: false
+  YI_NLNREQIN: 0
+  YI_NLLREQOUT: false
+  YL_NLLGP: true
+  YL_NLLSP: false
+  YL_NLLREQOUT: false
+  YL_NLNREQIN: 0
+  YQ_NLLGP: false
+  YQ_NLLSP: true
+  YQ_NLLGPINGP: true
+  YQ_NLNREQIN: 1
+  YR_NLLGP: true
+  YR_NLLSP: false
+  YR_NLLREQOUT: false
+  YR_NLNREQIN: 0
+  YS_NLLGP: true
+  YS_NLLSP: false
+  YS_NLLREQOUT: false
+  YS_NLNREQIN: 0
+  YTKE_NLLGP: true
+  YTKE_NLLREQOUT: false
+  YTKE_NLNREQIN: -1
+  YTKE_NLREFVALI: 0.000001
+
+NAMCOSJO:
+  LQSCATT: true
+  LTC: false
+  NOTVAR(1:27,1) : ' 0, 0,-1,-1,-1,-1,-1, 0,-1,-1,-1,-1,-1,-1,-1, 0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 0,'
+  NOTVAR(1:25,2) : ' 0, 0,-1,-1,-1,-1, 0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,'
+  NOTVAR(1:25,3) : ' 0, 0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,'
+  NOTVAR(1:25,4) : ' 0, 0,-1,-1,-1,-1,-1, 0,-1,-1,-1,-1,-1,-1,-1, 0,-1,-1,-1,-1,-1,-1,-1,-1,-1,'
+  NOTVAR(1:25,5) : ' 0,-1,-1,-1,-1,-1, 0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 0,-1,-1,-1,-1,-1,-1,'
+  NOTVAR(1:25,6) : ' 0, 0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,'
+  NOTVAR(1:25,7) : '-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,'
+  NOTVAR(1:25,8) : '-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,'
+  NOTVAR(1:25,9) : ' 0, 0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,'
+  NOTVAR(1:25,10) : '-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,'
+ 
+NAMPAR0:
+  NPRGPEW: 1
+  NPRGPNS: "NBPROC"
+  NPROC: "NBPROC"
+  NPRTRV: 1
+  NPRTRW: "NBPROC"
+
+NAMXFU:
+  LXFU: false
+  LXTHW: false
+
+NAMPAR1:
+  LSLONDEM: false
+  LSPLIT: false
+
+NAMPHY:
+  LRAYFM: false
+  LNEIGE: true
+
+NAMSATS:
+  LCO2_DIAG_AIRS: false
+  MEMIS_SW: 1
+
+NAMSIMPHL:
+  LVDIFSPNL: true
+  LSIMPH: true
+  LVDIFSP: true
+  LGWDSP: true
+  LSMOOTHA: true
+  LSMOOTHB: true
+  LSMOOTHD: true
+  LTRAJPS: true
+  LTRAJPST: true
+  LPROCLDTL: true
+
+NAMRES:
+  NFRRES: 10000
+
+NAMLCZ:
+  LFORCE: "LFORCE"
+
+NAMSTOPH:
+  LFORCENL: "LFORCENL"
+  NFORCESTART: 0
+  NFORCEEND: 2
+  AMAGSTOPH: 1.0
+
+NAMVAR:
+  LTOVSCV: false
+  ALPHAG: 1.0000000000
+  L3DFGAT: false
+  LANOBS: false
+  LCONGRAD: false
+  LJC: false
+  LJCDFI: false
+  LUSEJCDFI: false
+  NITER: 12
+  NSIMU: 25
+  NUPTRA: "NBUPTRA"
+  MUPTRA: 3
+  NGRATS0: 1
+  NFRGRA: 1000
+  LSKIPMIN: false
+  RCVGE: 0.001
+
+NAMDFI:
+  TAUS: 5400.
+  TAUC: 10800.
+  QNORM_ADJUST_VOR: 1.0
+  QNORM_ADJUST_DIV: 1.0
+  QNORM_ADJUST_T: 0.0
+  QNORM_ADJUST_Q: 0.0
+  QNORM_ADJUST_LNSP: 1.0
+
+NAMVRTL:
+  LDRYTL: true
+
+NEMELBC0A:
+  LE0COTA: true
+  NECOAD: -1
+  NECOTL: -1
+  NECRIPL: 1
+  LQCPL: false
+
+NEMELBC0B:
+  TEFRCL: $TEFRCL
+
+NAMIOMI:
+  LWARM_RD: false
+  LWARM_WR: false
+
+NAMOBS:
+  LCACHMT: true
