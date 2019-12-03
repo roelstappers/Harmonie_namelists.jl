@@ -1,5 +1,5 @@
 {
-  "$id": "./harmonie.schema.json",
+  "$id": "./harmonie_namelist.schema.json",
   "$schema" : "http://json-schema.org/schema#",
-  "title": "Harmonie experiment configuration"
+  "title": "Harmonie namelist schema"
 }

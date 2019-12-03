@@ -1,11 +1,13 @@
 
-import Harmonie_Namelist
-import YAML, TOML, JSON, JSONSchema
+import Harmonie_namelists
+import YAML, JSONSchema
 
 using Test
 
+BINDIR="$(pathof(Harmonie_namelists))/../bin"
+
 @testset "Namelists " begin
-    @test run(`../bin/gen_namelist.jl args > args.nml`)
+    @test read(`$BINDIR/gen_namelist.jl args`) == 
 end
 
 end
