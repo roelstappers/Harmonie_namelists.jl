@@ -3,7 +3,7 @@
 using YAML, OrderedCollections, Logging
 
 CDIR = @__DIR__
-NAMELIST_DIR = "$CDIR/../src/namelist/ifs"
+NAMELIST_DIR = "$CDIR/../src/namelists/ifs"
 
 println(NAMELIST_DIR)
 
