@@ -1,0 +1,9 @@
+[NAMARG]
+LELAM = true
+LECMWF = false
+
+[NAMGRIB]
+NENSFNB = "$ENSMBR"
+
+[NAMPAR0]
+NPRINTLEV = 1

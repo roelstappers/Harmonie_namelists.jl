@@ -1,0 +1,60 @@
+[NAMAFN]
+TFP_ILLGP = true
+TFP_LLLGP = true
+
+[NAMCT0]
+LSPRT = false
+
+[NAMDYN]
+SITR = 270.0
+
+[NAMGFL]
+YA_NLNREQIN = "ICLOUDFRACTI"
+YCPF_NLLGP = false
+YG_NLLGP = false
+YG_NLLSP = false
+YG_NLNREQIN = 0
+YI_NLLGP = false
+YI_NLLSP = false
+YI_NLNREQIN = 0
+YL_NLLGP = false
+YL_NLLSP = false
+YL_NLNREQIN = 0
+YQ_NLLGP = true
+YQ_NLLSP = false
+YQ_NLNREQIN = 1
+YR_NLLGP = false
+YR_NLLSP = false
+YR_NLNREQIN = 0
+YS_NLLGP = false
+YS_NLLSP = false
+YS_NLNREQIN = 0
+
+[NAMCOSJO]
+"NOTVAR(1:44,13)" = "-1,-1,-1,-1, 0, -1, 0, 0,-1,-1, -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[NAMMKODB]
+NTBMAR = "$NTBMAR?-90"
+NTFMAR = "$NTFMAR?90"
+
+[NAMPHY]
+LAERODES = true
+LAEROLAN = true
+LAEROSEA = true
+LAEROSOO = true
+LBLVAR = true
+LNEBN = false
+LO3ABC = true
+LRAY = false
+LVGSN = true
+
+[NAMPHY0]
+EDK = 5.0
+USURIC = 0.175
+USURICE = 0.5
+USURICL = 1.0
+USURID = 0.1
+
+[NAMVAR]
+LREADGPTRAJ = true
+LTRAJGP = true

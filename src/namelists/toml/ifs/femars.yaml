@@ -1,0 +1,39 @@
+#NAMSTOPH = null  # To use: uncomment and replace null with value
+LFORCENL = false
+
+[NAMVAR]
+LFEMARSD = true
+LFEMARSD_WRITERAW = false
+
+[NAMCT0]
+LSPRT = false
+NFPOS = 0
+NSFXHISTS = 0
+NHISTS = 0
+NPOSTS = 0
+
+[NAMARPHY]
+LMSE = false
+
+[NEMELBC0B]
+NEK0 = 0
+NEK1 = 0
+NEN1 = 0
+NEN2 = 0
+TEFRCL = 0.0
+
+[NAMOPH]
+LINC = false
+
+[NAMCT1]
+N1SFXHIS = 0
+
+[NAMXFU]
+NRAZTS = -1
+
+[NAERAD]
+NRADFR = 0
+
+[NAMPHMSE]
+LFMREAD = false
+LFMWRIT = false

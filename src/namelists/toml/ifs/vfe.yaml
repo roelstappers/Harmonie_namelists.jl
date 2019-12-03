@@ -1,0 +1,6 @@
+[NAMCVER]
+LVERTFE = true
+NVSCH = 3
+
+[NAMDYNA]
+LAPRXPK = true

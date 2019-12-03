@@ -1,7 +1,7 @@
 module Harmonie_namelists
 
 import JSONSchema, YAML
-using OrderedCollections
+using OrderedCollections, TOML
 # import Base.isvalid
 
 # export schema, isvalid, diagnose
@@ -12,8 +12,8 @@ const moduledir=@__DIR__
 # const schemafile="$moduledir/namelists.schema.json"
 #const schema = JSONSchema.Schema(read(schemafile,String),parentFileDirectory="$moduledir/") 
 # const schema = JSONSchema.Schema(read(schemafile,String)) 
-const NAMELIST_DIR = "$moduledir/namelists/ifs"
-
+# const NAMELIST_DIR = "$moduledir/namelists/ifs"
+const NAMELIST_DIR = "$moduledir/namelists/toml/ifs"
 include("dict2namelist.jl")
 
 """
@@ -21,7 +21,8 @@ include("dict2namelist.jl")
 
 Returns array of dictionaries 
 """ 
-read_namelists(names) = [YAML.load(open("$NAMELIST_DIR/$name.yaml")) for name in names]
+# read_namelists(names) = [YAML.load(open("$NAMELIST_DIR/$name.yaml")) for name in names]
+read_namelists(names) = [TOML.parsefile("$NAMELIST_DIR/$name.yaml") for name in names]
 
 """
     merge_namelists(dicts)
