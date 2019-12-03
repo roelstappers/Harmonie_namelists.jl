@@ -22,7 +22,7 @@ include("dict2namelist.jl")
 Returns array of dictionaries 
 """ 
 # read_namelists(names) = [YAML.load(open("$NAMELIST_DIR/$name.yaml")) for name in names]
-read_namelists(names) = [TOML.parsefile("$NAMELIST_DIR/$name.yaml") for name in names]
+read_namelists(names) = [TOML.parsefile("$NAMELIST_DIR/$name.toml") for name in names]
 
 """
     merge_namelists(dicts)
