@@ -42,7 +42,7 @@ rm -f julia-${JULIA_VERSION}-linux-x86_64.tar.gz
 export JULIA_DEPOT_PATH=$PERM/.julia
 
 # git clone will put the Harmonie_namelists.jl package in the $JULIA_PROJECT directory
-export JULIA_PROJECT=$JULIA_DEPOT_PATH/dev/Harmonie
+export JULIA_PROJECT=$JULIA_DEPOT_PATH/dev/Harmonie_namelists
 
 # Add Harmonie_namelists.jl bin directory to PATH
 export PATH=$PATH:${JULIA_PROJECT}/bin
