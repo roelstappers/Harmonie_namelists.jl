@@ -1,11 +1,9 @@
 #!/usr/bin/env julia
 
-using Harmonie_namelists  # , YAML, OrderedCollections
+using Harmonie_namelists
 
+io = stdout   # io = open("fort.4")
 
-# 
 dicts = read_namelists(ARGS)
 totdict = merge_namelists(dicts)
-
-io = stdout
 dict2namelist(io,totdict)

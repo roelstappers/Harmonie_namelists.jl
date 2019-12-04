@@ -14,6 +14,7 @@ const moduledir=@__DIR__
 # const schema = JSONSchema.Schema(read(schemafile,String)) 
 # const NAMELIST_DIR = "$moduledir/namelists/ifs"
 const NAMELIST_DIR = "$moduledir/namelists/toml/ifs"
+
 include("dict2namelist.jl")
 
 """
