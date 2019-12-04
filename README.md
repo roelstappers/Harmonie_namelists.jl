@@ -63,5 +63,5 @@ julia -e 'using Pkg; Pkg.instantiate(); Pkg.API.precompile()'
 ####################
 # Test installation
 #####################
-# gen_namelist.jl args
+Get_namelist.jl 
 ```
