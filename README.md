@@ -12,6 +12,7 @@ JULIA_VERSION=1.0.5   # Long term support version
 JULIA_VERSION=1.3.0  
 
 # Julia will be downloaded to $JULIADIR
+# Adjust for local HPC. 
 JULIADIR=$PERM/julia
 
 ############################
@@ -37,6 +38,7 @@ rm -f julia-${JULIA_VERSION}-linux-x86_64.tar.gz
 ```bash
 
 # JULIA_DEPOT_PATH controls where julia looks for package registries, installed packages etc. 
+# Adjust for local HPC
 export JULIA_DEPOT_PATH=$PERM/.julia
 
 # git clone will put the Harmonie_namelists.jl package in the $JULIA_PROJECT directory
