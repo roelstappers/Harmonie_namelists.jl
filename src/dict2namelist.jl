@@ -9,7 +9,7 @@ function dict2namelist(io::IO, dict::AbstractDict)
         println(io, "&$groupname")    
         if !(group === nothing) 
             for (key, value) in group 
-                println(io, "  $key = $value,")
+                println(io, "  $key = $(tofortran(value)),")
             end
         end    
         println(io, "/")
