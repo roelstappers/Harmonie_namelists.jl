@@ -47,9 +47,9 @@ export JULIA_PROJECT=$JULIA_DEPOT_PATH/dev/Harmonie_namelists
 # Add Harmonie_namelists.jl bin directory to PATH
 export PATH=$PATH:${JULIA_PROJECT}/bin
 
-####################
-#   Clone Harmonie.jl 
-###################
+##################################
+#   Clone Harmonie_namelists.jl 
+##################################
 
 git clone https://github.com/roelstappers/Harmonie_namelists.jl.git $JULIA_PROJECT
 
@@ -64,4 +64,5 @@ julia -e 'using Pkg; Pkg.instantiate(); Pkg.API.precompile()'
 # Test installation
 #####################
 julia --color=yes -e 'using Pkg; Pkg.test()'
+
 ```
