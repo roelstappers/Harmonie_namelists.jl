@@ -63,5 +63,5 @@ julia -e 'using Pkg; Pkg.instantiate(); Pkg.API.precompile()'
 ####################
 # Test installation
 #####################
-Get_namelist.jl 
+julia --color=yes -e 'using Pkg; Pkg.test()'
 ```
