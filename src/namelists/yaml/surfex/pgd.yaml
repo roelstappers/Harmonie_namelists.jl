@@ -1,53 +1,51 @@
- NAM_IO_OFFLINE=>{
-   CPGDFILE      => 'CPGDFILE,',
-   NHALO         => 0,
-   LFAGMAP       => '.TRUE.',
- },
- NAM_PGD_GRID=>{
-   CGRID         => '"CONF PROJ",',
- },
- NAM_CONF_PROJ=>{
-   XLAT0         => $ENV{LAT0},
-   XLON0         => $ENV{LON0},
-   XRPK          => $ENV{SINLAT0},
-   XBETA         => 0.0,
- },
- NAM_CONF_PROJ_GRID=>{
-   ILONE         => $ENV{EZONE},
-   ILATE         => $ENV{EZONE},
-   XLATCEN       => $ENV{LATC},
-   XLONCEN       => $ENV{LONC},
-   NIMAX         => 'BNIMAX,',
-   NJMAX         => 'BNJMAX,',
-   XDX           => 'BXDX,', 
-   XDY           => 'BXDY,',
- },
- NAM_COVER=> {
-   YCOVER        => 'YCOVER,',
-   YCOVERFILETYPE=> '"DIRECT",',
- },
- NAM_ZS=>{
-   YZS           => 'YTOPO,',
-   YZSFILETYPE   => '"DIRECT",',
- },
- NAM_SEABATHY=>{
-   XUNIF_SEABATHY=>'0.,', 
- },
- NAM_PGD_SCHEMES=>{
-    CNATURE => '"ISBA ",',
-    CSEA    => '"SEAFLX",',
-    CWATER  => '"'."$ENV{SURFEX_LAKES}".'",',
-    CTOWN   => '"TEB ",',
- },
- NAM_FLAKEn=>{
-    LSEDIMENTS => '.FALSE.',
- },
- NAM_DATA_FLAKE=>{
-    YWATER_DEPTH         => '"GlobalLakeDepth"',
-    YWATER_DEPTHFILETYPE => '"DIRECT"',
-    YWATER_DEPTH_STATUS  => '"GlobalLakeStatus"',
- },
- NAM_WRITE_SURF_ATM=>{
-   LSPLIT_PATCH=>'.FALSE.',
- },
-);
+NAM_IO_OFFLINE:
+  CPGDFILE: CPGDFILE
+  NHALO: 0
+  LFAGMAP: true
+
+NAM_PGD_GRID:
+  CGRID: CONF PROJ
+
+NAM_CONF_PROJ:
+  XLAT0: $LAT0
+  XLON0: $LON0
+  XRPK: $SINLAT0
+  XBETA: 0.0
+
+NAM_CONF_PROJ_GRID:
+  ILONE: $EZONE
+  ILATE: $EZONE
+  XLATCEN: $LATC
+  XLONCEN: $LONC
+  NIMAX: BNIMAX
+  NJMAX: BNJMAX
+  XDX: BXDX
+  XDY: BXDY
+
+NAM_COVER:
+  YCOVER: YCOVER
+  YCOVERFILETYPE: DIRECT
+
+NAM_ZS:
+  YZS: YTOPO
+  YZSFILETYPE: DIRECT
+
+NAM_SEABATHY:
+  XUNIF_SEABATHY: 0.
+
+NAM_PGD_SCHEMES:
+  CNATURE: ISBA
+  CSEA: SEAFLX
+  CWATER: $SURFEX_LAKES
+  CTOWN: TEB
+
+NAM_FLAKEn:
+  LSEDIMENTS: false
+
+NAM_DATA_FLAKE:
+  YWATER_DEPTH: GlobalLakeDepth
+  YWATER_DEPTHFILETYPE: DIRECT
+  YWATER_DEPTH_STATUS: GlobalLakeStatus
+
+NAM_WRITE_SURF_ATM:
+  LSPLIT_PATCH: false

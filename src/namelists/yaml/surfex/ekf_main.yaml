@@ -1,29 +1,29 @@
- NAM_ASSIM=>{
-   CASSIM_ISBA         => '"EKF",',
- },
- NAM_DIAG_ISBAn=>{
-   LSURF_MISC_BUDGET => '.TRUE.,',
- },
- NAM_IO_VARASSIM=>{
-   LPRT         =>  'LPRT',
-   LSIM         =>  'LSIM',
-   LBEV         =>  'LBEV',
-   LBFIXED      =>  'LBFIXED',
- },
- NAM_VAR=>{
-   NIVAR        => 'VV,',
-   NVAR         => 'NV,',
-   CVAR_M       => '"WG2","WG1","TG2","TG1",',
-   XSIGMA_M     => '0.15,0.1,2.0,2.0,',
-   XTPRT_M      => '0.0001,0.0001,0.00001,0.00001,',
-   NNCV         =>  $ENV{NNCV},
-   XSCALE_Q     => '0.125,',
- },
- NAM_OBS=>{
-    'NOBSTYPE'=>'3',
-    'COBS_M(1)'=>'"T2M",',
-    'COBS_M(2)'=>'"HU2M",',
-    'COBS_M(3)'=>'"SWE",',
-    NNCO => $ENV{NNCO},
-  },
+ NAM_ASSIM:
+   CASSIM_ISBA         : "EKF"
+ 
+ NAM_DIAG_ISBAn:
+   LSURF_MISC_BUDGET : true 
+ 
+ NAM_IO_VARASSIM:
+   LPRT         :  LPRT
+   LSIM         :  LSIM
+   LBEV         :  LBEV
+   LBFIXED      :  LBFIXED
+ 
+ NAM_VAR:
+   NIVAR        : VV
+   NVAR         : NV
+   CVAR_M       : '"WG2","WG1","TG2","TG1",'
+   XSIGMA_M     : '0.15,0.1,2.0,2.0,'
+   XTPRT_M      : '0.0001,0.0001,0.00001,0.00001,'
+   NNCV         : $NNCV
+   XSCALE_Q     : '0.125,'
+ 
+ NAM_OBS:
+    NOBSTYPE: 3
+    COBS_M(1): T2M
+    COBS_M(2): HU2M
+    COBS_M(3): SWE
+    NNCO : $NNCO
+  
 

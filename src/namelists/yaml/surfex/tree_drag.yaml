@@ -1,4 +1,2 @@
- NAM_TREEDRAG=>{
-   XZ0_LIMIT=>'1.6,',
- },
-);
+NAM_TREEDRAG:
+  XZ0_LIMIT: 1.6

@@ -1,19 +1,16 @@
- NAM_PREP_ISBA=>{
-   LISBA_CANOPY  => $ENV{LISBA_CANOPY}.",",
-   LEXTRAP_TG    => '.TRUE.,',
-   LEXTRAP_WG    => '.TRUE.,',
-   LEXTRAP_WGI   => '.TRUE.,',
-   LEXTRAP_SN    => '.TRUE.,',
- },
- NAM_PREP_ISBA_SNOW=>{
-   CSNOW        => "'".$ENV{CSNOW}."'",
-   LSWEMAX      => '.TRUE.,',
- },
- NAM_DIAG_ISBAn=>{
-   LPATCH_BUDGET=>'.TRUE.,',
- },
- NAM_WRITE_SURF_ATM=>{
-   LSPLIT_PATCH=>'.FALSE.',
- },
-);
+NAM_PREP_ISBA:
+  LISBA_CANOPY: $LISBA_CANOPY
+  LEXTRAP_TG: true
+  LEXTRAP_WG: true
+  LEXTRAP_WGI: true
+  LEXTRAP_SN: true
 
+NAM_PREP_ISBA_SNOW:
+  CSNOW: $CSNOW
+  LSWEMAX: true
+
+NAM_DIAG_ISBAn:
+  LPATCH_BUDGET: true
+
+NAM_WRITE_SURF_ATM:
+  LSPLIT_PATCH: false

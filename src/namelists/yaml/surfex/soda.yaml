@@ -1,21 +1,21 @@
-  NAM_OBS=>{
-    'CFILE_FORMAT_OBS'=>'"ASCII"',
-    'LSWE'=>'.FALSE.,',
-    'NOBSTYPE'=>'3',
-    'COBS_M(1)'=>'"T2M",',
-    'COBS_M(2)'=>'"HU2M",',
-    'COBS_M(3)'=>'"SWE",',
-    NNCO => $ENV{NNCO},
-  },
-  NAM_ASSIM=>{
-    'CFILE_FORMAT_FG'=> '"'.$ENV{CFILE_FORMAT_FG}.'",',
-    'CFILE_FORMAT_LSM'=>'"'.$ENV{CFILE_FORMAT_LSM}.'",',
-    'CFILE_FORMAT_CLIM'=>'"'.$ENV{CFILE_FORMAT_CLIM}.'",',
-    'CFILE_FORMAT_SST'=>'"'.$ENV{CFILE_FORMAT_SST}.'",',
-  },
+  NAM_OBS:
+    CFILE_FORMAT_OBS: ASCII
+    LSWE: false
+    NOBSTYPE: 3
+    COBS_M(1): T2M
+    COBS_M(2): HU2M
+    COBS_M(3): SWE
+    NNCO : $NNCO
+  
+  NAM_ASSIM:
+    CFILE_FORMAT_FG: $CFILE_FORMAT_FG
+    CFILE_FORMAT_LSM: $CFILE_FORMAT_LSM
+    CFILE_FORMAT_CLIM: $CFILE_FORMAT_CLIM
+    CFILE_FORMAT_SST: $CFILE_FORMAT_SST
+  
   # Needed here also for SODA + OI
-  NAM_OBS=>{
-    'CFILE_FORMAT_OBS'=>'"ASCII"',
-    'LSWE'=>'.FALSE.,',
-  },
-);
+  NAM_OBS:
+    CFILE_FORMAT_OBS: ASCII
+    LSWE: false 
+  
+

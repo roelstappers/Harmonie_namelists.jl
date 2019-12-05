@@ -1,14 +1,11 @@
- NAM_SEAICE_SICE=>{
-    LICE_MASS_BALANCE   => '.TRUE.,',
-    LICE_HAS_SNOW       => '.FALSE.,',
-    XOCEAN_HEAT_FLUX    => '2.,',
- },
- NAM_PREP_SEAICE_SICE=>{
-    XICE_THICKNESS      => '.75,',
-    NUM_LAYERS          => '4,'
- },
- NAM_PREP_SEAFLUX=>{
-    LSEA_SBL           => '.FALSE.',
- },
-);
+NAM_SEAICE_SICE:
+   LICE_MASS_BALANCE: true
+   LICE_HAS_SNOW: false
+   XOCEAN_HEAT_FLUX: 2.
 
+NAM_PREP_SEAICE_SICE:
+   XICE_THICKNESS: .75
+   NUM_LAYERS: 4
+
+NAM_PREP_SEAFLUX:
+   LSEA_SBL: false

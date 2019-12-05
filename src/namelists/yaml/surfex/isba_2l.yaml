@@ -1,5 +1,3 @@
- NAM_ISBA=>{
-  CISBA          => '"2-L",',
-  NGROUND_LAYER  => '2,',
- },
-);
+NAM_ISBA:
+  CISBA: "2-L"
+  NGROUND_LAYER: 2

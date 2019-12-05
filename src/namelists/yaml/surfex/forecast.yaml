@@ -1,54 +1,53 @@
- NAM_IO_OFFLINE=>{
-  CFORCING_FILETYPE   => '"'.$ENV{CFORCING_FILETYPE}.'",',
-  XTSTEP_SURF         => $ENV{TSTEP}.",",
-  XTSTEP_OUTPUT       => '3600.,',
-  LRESTART            => '.TRUE.,',
-  CPREPFILE           => '"PREP",',
-  CPGDFILE            => '"PGD",',
-  LFAGMAP             => '.TRUE.',
- },
- NAM_SURF_ATM=>{
-   XRIMAX=>'0.0,',
- },
- NAM_DIAG_SURFn=>{
-   N2M      =>'2,',
-   LSURF_BUDGET      => '.TRUE.,',
-   LSURF_BUDGETC     => '.TRUE.,',
-   LRESET_BUDGETC    => '.TRUE.,',
-   LCOEF             => '.TRUE.,',
-   LSURF_VARS        => '.TRUE.,',
-   LCOEF             => '.TRUE.,',
-   LSURF_VARS        => '.TRUE.,',
- },
- NAM_DIAG_SURF_ATMn=>{
-   LT2MMW            => '.TRUE.,',
- },
- NAM_DIAG_ISBAn=>{
-   LPATCH_BUDGET  => '.TRUE.,',
- },
- NAM_SSOn=>{
-   CROUGH   => "'".$ENV{CROUGH}."'",
-   XFRACZ0  => '15.,',
-   XSOROT   => $ENV{GSIZE}.",", 
-   XVOROT   => '8.,', 
-   XCOROT   => '100.,',  
- },
- NAM_SEAFLUXn=>{
-  LPWG      => '.FALSE.,',
-  LPRECIP   => '.FALSE.,',
-  LPWEBB    => '.FALSE.,',
-  LPERTFLUX   => 'LPERTSURF,',
- },
- NAM_ISBAn=>{
-  LCANOPY_DRAG => '.TRUE.,',
-  XCDRAG       => '0.01,',
-  LPERTSURF    => 'LPERTSURF,',
- },
- NAM_SURF_CSTS=>{
-  XZ0SN         => '0.003',
-  XZ0HSN        => '0.0003',
- },
- NAM_WRITE_SURF_ATM=>{
-   LSPLIT_PATCH=>'.FALSE.',
- },
-);
+ NAM_IO_OFFLINE:
+  CFORCING_FILETYPE   : $CFORCING_FILETYPE
+  XTSTEP_SURF         : $TSTEP
+  XTSTEP_OUTPUT       : 3600
+  LRESTART            : true 
+  CPREPFILE           : PREP
+  CPGDFILE            : PGD
+  LFAGMAP             : true
+ 
+ NAM_SURF_ATM:
+   XRIMAX: 0.0
+ 
+ NAM_DIAG_SURFn:
+   N2M      : 2
+   LSURF_BUDGET      : true
+   LSURF_BUDGETC     : true
+   LRESET_BUDGETC    : true
+   LCOEF             : true
+   LSURF_VARS        : true
+   LCOEF             : true
+   LSURF_VARS        : true
+ 
+ NAM_DIAG_SURF_ATMn:
+   LT2MMW            : true
+ 
+ NAM_DIAG_ISBAn:
+   LPATCH_BUDGET  : true
+ 
+ NAM_SSOn:
+   CROUGH   : $CROUGH
+   XFRACZ0  : 15.
+   XSOROT   : $GSIZE
+   XVOROT   : 8. 
+   XCOROT   : 100.
+ 
+ NAM_SEAFLUXn:
+  LPWG      : false
+  LPRECIP   : false
+  LPWEBB    : false
+  LPERTFLUX   : LPERTSURF
+ 
+ NAM_ISBAn:
+  LCANOPY_DRAG : true
+  XCDRAG       : 0.01
+  LPERTSURF    : LPERTSURF
+ 
+ NAM_SURF_CSTS:
+  XZ0SN         : 0.003
+  XZ0HSN        : 0.0003
+ 
+ NAM_WRITE_SURF_ATM:
+   LSPLIT_PATCH: false
+ 

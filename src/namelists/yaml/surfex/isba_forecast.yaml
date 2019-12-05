@@ -1,5 +1,3 @@
- NAM_DIAG_ISBAn=>{
-   LPGD     => '.TRUE.,',
-   LSURF_MISC_BUDGET=> '.TRUE.,',
- },
-);
+NAM_DIAG_ISBAn:
+  LPGD: true
+  LSURF_MISC_BUDGET: true

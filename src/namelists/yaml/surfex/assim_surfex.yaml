@@ -1,48 +1,47 @@
- NAM_NACVEG : 
-   NECHGU      : $ENV{FCINT}
-   XRCLIMCA     : 0.0
-   XRCLISST     : 0.05
-   XSIGH2MO     : 0.10
-   XSIGT2MO     : 1.0
-   LOBS2M      : true
-   LOBSWG      : false
- 
- NAM_IO_OFFLINE:
-   LSET_FORC_ZS         : $ENV{LSET_FORC_ZS}
-   LRESTART_2M          : true
-   CFORCING_FILETYPE   : ".$ENV{CFORCING_FILETYPE}."   
-   LRESTART             : true
-   XTSTEP_SURF          : 3600.0
-   XTSTEP_OUTPUT        : 3600.0
-   LFAGMAP              : true
+NAM_NACVEG:
+  NECHGU: $FCINT
+  XRCLIMCA: 0.0
+  XRCLISST: 0.05
+  XSIGH2MO: 0.10
+  XSIGT2MO: 1.0
+  LOBS2M: true
+  LOBSWG: false
 
- NAM_ASSIM:
-   LASSIM              : true
-   CASSIM_SEA          : "INPUT"
-   CASSIM_WATER        : "INPUT"
-   CASSIM_TEB          : "ROADT"
-   LEXTRAP_WATER       : true
-   LWATERTG2           : true
-   LAESNM              : LAESNM
-   LEXTRAP_SEA         : false
-   LEXTRAP_NATURE      : false
-   LREAD_SST_FROM_FILE : true
-   LECSST              : LECSST
-   LAROME              : LAROME
-   NPRINTLEV           : 1
-   LRELCLIMSNOW        : false
- 
- NAM_DIAG_SURFn:
-   N2M                 : 2
- 
- NAM_DIAG_SURF_ATMn:
-   LT2MMW              : true
- 
- NAM_DIAG_ISBAn:
-   LPATCH_BUDGET       : true
-   LPGD                : true
-   LSURF_MISC_BUDGET   : true
- 
- NAM_WRITE_SURF_ATM:
-   LSPLIT_PATCH: false
+NAM_IO_OFFLINE:
+  LSET_FORC_ZS: $LSET_FORC_ZS
+  LRESTART_2M: true
+  CFORCING_FILETYPE: $CFORCING_FILETYPE
+  LRESTART: true
+  XTSTEP_SURF: 3600.0
+  XTSTEP_OUTPUT: 3600.0
+  LFAGMAP: true
 
+NAM_ASSIM:
+  LASSIM: true
+  CASSIM_SEA: INPUT
+  CASSIM_WATER: INPUT
+  CASSIM_TEB: ROADT
+  LEXTRAP_WATER: true
+  LWATERTG2: true
+  LAESNM: LAESNM
+  LEXTRAP_SEA: false
+  LEXTRAP_NATURE: false
+  LREAD_SST_FROM_FILE: true
+  LECSST: LECSST
+  LAROME: LAROME
+  NPRINTLEV: 1
+  LRELCLIMSNOW: false
+
+NAM_DIAG_SURFn:
+  N2M: 2
+
+NAM_DIAG_SURF_ATMn:
+  LT2MMW: true
+
+NAM_DIAG_ISBAn:
+  LPATCH_BUDGET: true
+  LPGD: true
+  LSURF_MISC_BUDGET: true
+
+NAM_WRITE_SURF_ATM:
+  LSPLIT_PATCH: false

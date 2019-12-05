@@ -1,9 +1,9 @@
- NAM_DATA_ISBA=>{
-    'CFNAM_H_TREE(4)'  => "'".$ENV{H_TREE_FILE}."'",
-    'CFTYP_H_TREE(4)'  => '"ASCLLV",',
-    'CFNAM_H_TREE(5)'  => "'".$ENV{H_TREE_FILE}."'",
-    'CFTYP_H_TREE(5)'  => '"ASCLLV",',
-    'CFNAM_H_TREE(6)'  => "'".$ENV{H_TREE_FILE}."'",
-    'CFTYP_H_TREE(6)'  => '"ASCLLV",',
- },
-);
+ NAM_DATA_ISBA:
+    CFNAM_H_TREE(4)  : $H_TREE_FILE
+    CFTYP_H_TREE(4)  : ASCLLV
+    CFNAM_H_TREE(5)  : $H_TREE_FILE
+    CFTYP_H_TREE(5)  : ASCLLV
+    CFNAM_H_TREE(6)  : $H_TREE_FILE
+    CFTYP_H_TREE(6)  : ASCLLV
+ 
+
