@@ -9,7 +9,7 @@ Generation of Harmonie namelists validated using [json-schema](https://json-sche
 
 ```bash
 JULIA_VERSION=1.0.5   # Long term support version  
-JULIA_VERSION=1.3.0  
+# JULIA_VERSION=1.3.0  
 
 # Julia will be downloaded to $JULIADIR
 # Adjust for local HPC. 
