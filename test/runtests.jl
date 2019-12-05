@@ -8,7 +8,7 @@ using Test
 
 # Check that the mechanism where we take variables from the ENVironment works
 @testset "ENV" begin 
-    dicts = read_namelists(["global"])
+    dicts = read_namelists(["global", "canari"])
     totdict = merge_namelists(dicts)
     # ENV["ENSMBR"] is not defined so replace_env! throws an error
     @test_throws ErrorException replace_env!(totdict)
