@@ -13,10 +13,12 @@ using Test
     # ENV["ENSMBR"] is not defined so replace_env! throws an error
     @test_throws ErrorException replace_env!(totdict)
 
-    # After setting ENV["ENSMBR"] the same call should succeeds (returns nothing)
+    # After setting ENV["ENSMBR"] the same call should succeed (returns nothing)
     ENV["ENSMBR"] = 1
     @test replace_env!(totdict) === nothing
 
+    # Check that call to dict2namelist succeeds
+    @test dict2namelist(stdout,totdict) === nothing
 end 
 
 
