@@ -1,7 +1,7 @@
 
 tofortran(val::Bool) =  val ? ".TRUE."  :  ".FALSE."
 tofortran(val::Number) = val
-tofortran(val::String) = "'$val'"
+tofortran(val::AbstractString) = "'$val'"
 
 function dict2namelist(io::IO, dict::AbstractDict)
     println(io, "# this file has been generated automatically")
