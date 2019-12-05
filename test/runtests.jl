@@ -6,7 +6,7 @@ using Test
 # These are very basic test. Once we have JSONSchema files for namelists 
 # we could validate the namelists much better
 
-# Check that the mechanism where we  take variables from the ENVironment works
+# Check that the mechanism where we take variables from the ENVironment works
 @testset "ENV" begin 
     dicts = read_namelists(["global"])
     totdict = merge_namelists(dicts)
@@ -17,6 +17,9 @@ using Test
     ENV["ENSMBR"] = 1
     @test replace_env!(totdict) === nothing
 
+    # Check that substitution worked 
+    @test totdict["NAMGRIB"]["NENSFNB"] == ENV["ENSMBR"]
+
     # Check that call to dict2namelist succeeds
     @test dict2namelist(stdout,totdict) === nothing
 end 
@@ -24,13 +27,8 @@ end
 
 BINDIR="../bin"
 @testset "Namelists " begin
-    # This should be improved we only test that Gen_namelist produces output
+    # This should be improved we only test that gen_namelist and 
+    # Get_namelist produce output
     @test !isempty(read(`$BINDIR/gen_namelist.jl args`))
     @test !isempty(read(`$BINDIR/Get_namelist.jl`))
 end
-
-run_with__env(cmd) = run(Cmd(cmd,env=ODBENV))
-
-
-
-
