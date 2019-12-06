@@ -14,15 +14,35 @@ using Test
     @test_throws ErrorException replace_env!(totdict)
 
     # After setting ENV["ENSMBR"] the same call should succeed (returns nothing)
-    ENV["ENSMBR"] = 1
+    ENV["ENSMBR"] = 123
     @test replace_env!(totdict) === nothing
 
     # Check that substitution worked 
-    @test totdict["NAMGRIB"]["NENSFNB"] == ENV["ENSMBR"]
+    @test totdict["NAMGRIB"]["NENSFNB"] == 123
 
     # Check that call to dict2namelist succeeds
     @test dict2namelist(stdout,totdict) === nothing
+
+   
 end 
+
+# Check that the mechanism where we optionally take variables from the ENVironment works
+@testset "ENV?default" begin
+    dicts = read_namelists(["arome_screening"])
+    totdict = merge_namelists(dicts)
+    @test replace_env!(totdict)=== nothing
+    @test totdict["NAMMKODB"]["NTBMAR"]  == -90
+    @test totdict["NAMMKODB"]["NTFMAR"]  == 90
+
+    # After setting ENV 
+    ENV["NTBMAR"] = 1
+    ENV["NTFMAR"] = 1
+    dicts = read_namelists(["arome_screening"])
+    totdict = merge_namelists(dicts)
+    @test replace_env!(totdict)=== nothing
+    @test totdict["NAMMKODB"]["NTBMAR"]  == 1
+    @test totdict["NAMMKODB"]["NTFMAR"]  == 1
+end
 
 
 BINDIR="../bin"

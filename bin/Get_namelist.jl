@@ -9,15 +9,15 @@ using Harmonie_namelists
 
 
 # We set ENV here. Could run `export LMPOFF=".TRUE."` etc  before calling this script.  
-ENV["LMPOFF"] = ".TRUE."
+ENV["LMPOFF"] = true
 ENV["ENSMBR"] = 1
-ENV["L_GATHERV_WRGP"] = ".TRUE." 
+ENV["L_GATHERV_WRGP"] = true  
 ENV["NPROMA"]  = 1
-ENV["LHARATU"]  = ".TRUE."
+ENV["LHARATU"]  = true 
 ENV["NPROC_IO"] = 1
-ENV["CIFDIR"] = "1"
+ENV["CIFDIR"] = "a/b/c"
 ENV["TEFRCL"] = 1
-ENV["LSTATNW"] = ".TRUE."
+ENV["LSTATNW"] = true 
 ENV["NXGSTPERIOD"] = 0
 
 default = ["global", "host_specific", "mpp","file"]
@@ -35,7 +35,8 @@ configs = Dict("e927" => [default; dynamics; "dfi"; "args"],
                "screen4d" => [default; "screening"; dynamics; "args"])
 
 io =stdout
-for key in keys(configs)     
+for key in keys(configs) 
+    println(key)    
     dicts = read_namelists(configs[key])
     totdict = merge_namelists(dicts)
     replace_env!(totdict)

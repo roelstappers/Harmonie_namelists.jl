@@ -1,0 +1,42 @@
+# With JSONSchema we could encode this in the schema file
+
+NTBMAR : Int
+NTFMAR : Int
+LSTATNW : Bool
+LHARATU : Bool
+LSPSDT : Bool
+SDEV_SDT1 : Float
+TAU_SDT1 : Float
+XLCOR_SDT1 : Float
+NTBMAR:   Int 
+NTFMAR: Int 
+XCLIP_RATIO_SDT : Float 
+LSPG_SDT : Bool 
+SPGQ_SDT : Float 
+SPGLAMBDA_SDT : Float 
+SPGMU_SDT : Float 
+SPGSIGMA_SDT : Float 
+SPGADTMIN_SDT : Float 
+SPGADTMAX_SDT : Float 
+NXGSTPERIOD : Int 
+TEFRCL : Float 
+YI_NLNREQIN : Int 
+YL_NLNREQIN : Int 
+YR_NLNREQIN : Int 
+YS_NLNREQIN : Int 
+YA_NLNREQIN : Int 
+YG_NLNREQIN : Int 
+YI_NLNREQIN : Int 
+NPROMA: Int 
+NFPROMA: Int 
+NFPROMA_DEP: Int 
+LMPOFF: Bool
+L_GATHERV_WRGP: Bool
+TEFRCL: Int
+NPROC_IO: Int
+CIFDIR: String 
+RLAT_ACAD: Float 
+RLON_ACAD: Float 
+NENSFNB : Int 
+
+
