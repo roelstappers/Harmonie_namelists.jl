@@ -1,6 +1,7 @@
 #!/usr/bin/env julia
 
-using Harmonie_namelists
+using Harmonie_namelists, YAML
+import Base.ENV
 
 # Usage:
 #    Get_namemlist.jl 
@@ -8,36 +9,23 @@ using Harmonie_namelists
 # Currently output is written to stdout
 
 
-# We set ENV here. Could run `export LMPOFF=".TRUE."` etc  before calling this script.  
-# In the future we should read this from a config file and remove the default values here. 
-# Cleaner here would be to create a Default::dict and use merge(Default,ENV) 
-# default = Dict{String,Any}(); default["LMPOFF"] = false
-ENV["LMPOFF"] = haskey(ENV,"LMPOFF") ? ENV["LMPOFF"]  : false
-ENV["L_GATHERV_WRGP"] = true  
-ENV["NPROC_IO"] = 1
-alaro_version = haskey(ENV,"ALARO_VERSION") ? ENV["ALARO_VERSION"]  : 0 
-dynamics = haskey(ENV,"DYNAMICS") ? ENV["DYNAMICS"]  : "nh" 
-physics  = haskey(ENV,"PHYSICS") ? ENV["PHYSICS"]  : "arome" 
-vert_disc = haskey(ENV,"VERT_DISC") ? ENV["VERT_DISC"]  : "vfd"
-domain = haskey(ENV,"DOMAIN") ? ENV["DOMAIN"] : "TEST"
-mass_flux_scheme = haskey(ENV,"MASS_FLUX_SCHEME") ? ENV["MASS_FLUX_SCHEME"] : "edmfm"
-simulation_type = haskey(ENV,"SIMULATION_TYPE") ? ENV["SIMULATION_TYPE"] : "nwp"
-cisba = haskey(ENV,"CISBA") ? ENV["CISBA"] : "3-L"
+# Harmonie requires $ENSMBR to be exported. We set it here explicitly. 
+# ENSMBR is not part of defaults.yaml     
+Harmonie_namelists.MYENV["ENSMBR"] =1   
 
-ENV["ENSMBR"] = 1
-ENV["NPROMA"]  = 1
-ENV["LHARATU"]  = true 
-ENV["CIFDIR"] = "a/b/c"
-ENV["TEFRCL"] = 1
-ENV["LSTATNW"] = true 
-ENV["NXGSTPERIOD"] = 0
-ENV["GNSS_OBS"] = 0
-ENV["LVARBC_GNSS"] = false
 
- 
+# Extract some values from ENV
+alaro_version = Harmonie_namelists.MYENV["ALARO_VERSION"] 
+dynamics = Harmonie_namelists.MYENV["DYNAMICS"]
+physics  = Harmonie_namelists.MYENV["PHYSICS"] 
+vert_disc = Harmonie_namelists.MYENV["VERT_DISC"] 
+domain = Harmonie_namelists.MYENV["DOMAIN"] 
+mass_flux_scheme = Harmonie_namelists.MYENV["MASS_FLUX_SCHEME"] 
+simulation_type = Harmonie_namelists.MYENV["SIMULATION_TYPE"] 
+cisba = Harmonie_namelists.MYENV["CISBA"] 
 
-e927_dynamics = dynamics  == "nh" ? "e927_nh" : "empty"
-pp_dynamics = dynamics == "nh" ? "pp_nh" : "empty"
+e927_dynamics =  dynamics == "nh" ? "e927_nh" : "empty"
+pp_dynamics =  dynamics  == "nh" ? "pp_nh" : "empty"
 
 # Misc
 extra_forecast_options= vert_disc 
@@ -69,7 +57,7 @@ simulation_type == "climate" && push!(extra_forecast_options,["cc01_mse"; "args"
 
 # varbc
 varbc_nam  = ["varbc"]
-ENV["GNSS_OBS"] == "1" && ENV["LVARBC_GNSS"] == "T" && push!(varbc_nam, "varbc_gnss")
+Harmonie_namelists.MYENV["GNSS_OBS"] == "1" && Harmonie_namelists.MYENV["LVARBC_GNSS"] == "T" && push!(varbc_nam, "varbc_gnss")
 
 
 # Note: these are not consistent with Get_namelist
@@ -86,8 +74,8 @@ configs = Dict("e927" => [default; dynamics; "dfi"; "args"],
 io =stdout
 for key in keys(configs) 
     println(key)    
-    dicts = read_namelists(configs[key])
-    totdict = merge_namelists(dicts)
+    dicts = read_namelist.(configs[key])
+    totdict = merge_namelists(dicts)    
     replace_env!(totdict)
     dict2namelist(io,totdict)
 

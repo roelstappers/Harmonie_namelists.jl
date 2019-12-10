@@ -34,8 +34,8 @@ NAMCOSJO:
   "NOTVAR(1:44,13)": "-1,-1,-1,-1, 0, -1, 0, 0,-1,-1, -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
 NAMMKODB:
-   NTBMAR : $NTBMAR?-90
-   NTFMAR : $NTFMAR?90
+   NTBMAR : $NTBMAR
+   NTFMAR : $NTFMAR
 
 NAMPHY:
   LAERODES: true

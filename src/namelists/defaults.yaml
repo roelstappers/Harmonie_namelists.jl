@@ -40,7 +40,7 @@ ALARO_VERSION: 0
 VERT_DISC: vfd
 
 
-# These are taken from harmonie_namelist.pm
+# These are the "&Env_or" variables from harmonie_namelist.pm
 NTBMAR : -90
 NTFMAR : 90
 NTFMAR: 90
