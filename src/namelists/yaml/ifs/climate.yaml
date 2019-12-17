@@ -1,12 +1,3 @@
- NAMARG:
-  CNMEXP    : "CLIM"
-  NCONF     : 923
-  LELAM     : true
-  LECMWF    : false
-  CUSTOP    : t0
-  TSTEP     : 600.
-  LSLAG     : true
-  NSUPERSEDE: 0
  
  NAMCT0:
   LRPLANE : true
