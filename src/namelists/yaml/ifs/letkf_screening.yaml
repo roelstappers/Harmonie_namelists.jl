@@ -1,0 +1,13 @@
+# todo
+NAMCOSJO:
+  "NOTVAR1:255" : " 0 0-1-1-1-1 0-1-1-1-1-1-1-1-1-1-1-1 0-1-1-1-1-1-1"
+ 
+ NAMSATS:
+  "LRTCALC_HRETR0" : true
+  "LRTCALC_HRETR3" : true
+  "LRTCALC_HRETR4" : true
+  "LRTCALC_HRETR11" : true
+  "LRTCALC_HRETR15" : true
+  "LRTCALC_HRETR16" : true
+ 
+
